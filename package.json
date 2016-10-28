@@ -1,0 +1,23 @@
+{
+  "name": "palindrome-challenge",
+  "version": "1.0.0",
+  "description": "Palindrome Challenge",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "chai-http": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "palindrome",
+    "challenge"
+  ],
+  "author": "celomaluf@gmail.com",
+  "license": "MIT"
+}

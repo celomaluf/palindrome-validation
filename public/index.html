@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Palindrome Test</title>
+
+        <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="app/app.js"></script>
+        <script src="app/controllers/palindrome-controller.js"></script>
+
+    </head>
+
+    <body>
+        <div class="jumbotron">
+            <h1 class="text-center">Palindrome Test</h1>
+        </div>
+
+        <div class="container" data-ng-controller="PalindromeController">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form data-ng-submit="verifyPalindrome()" class="input-group input-group-lg">
+                                <input type="text" class="form-control" data-ng-model="input" placeholder="Type your Palindrome expression">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-success blue" type="submit">Validate</button>
+                                </span>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="row mg-top-20">
+                        <div class="col-md-12">
+                            <div class="well well-sm">
+                                <h4>Result</h4>
+
+                                <div class="alert" data-ng-show="verified" data-ng-class="{ 'alert-success': isPalindrome, 'alert-danger': !isPalindrome}">
+                                    <p> {{ isPalindrome ? 'It is Palindrome.' : 'It is NOT Palindrome.' }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
