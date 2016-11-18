@@ -1,4 +1,4 @@
-# INSTALATION
+# INSTALLATION
 
 1. Run the command "npm install" in the root directory.
 2. Run the command "bower install" in the public directory.  
