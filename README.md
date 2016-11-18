@@ -1,12 +1,12 @@
-# INSTALAÇÃO:
+# INSTALATION
 
-1. Rode o comando "npm install" na pasta raiz.
-2. Rode o comando bower install na pasta public.  
+1. Run the command "npm install" in the root directory.
+2. Run the command "bower install" in the public directory.  
 
-# EXECUÇÃO:
+# RUNNING
 
-1. Rode o comando "node app.js" na pasta raiz.
+1. Run the command "node app.js" in the root directory.
 
-# TESTE:
+# TESTING
 
-1. Rode o comando "mocha" na pasta raiz.
+1. Run the command "mocha" in the root directory.
